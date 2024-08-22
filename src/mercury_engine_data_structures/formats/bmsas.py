@@ -6,7 +6,6 @@ from construct.core import (
     Byte,
     Const,
     Construct,
-    Error,
     Flag,
     Hex,
     If,
