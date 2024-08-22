@@ -25,7 +25,7 @@ dread_bcmdl_expected_failure = [
 
 
 @pytest.mark.parametrize("bcmdl_path", dread_data.all_files_ending_with(".bcmdl"))
-def test_compare_dread_all(dread_file_tree, bcmdl_path):
+def test_compare_bcmdl_dread(dread_file_tree, bcmdl_path):
     if bcmdl_path in dread_bcmdl_expected_failure:
         expectation = pytest.raises(AssertionError)
     else:

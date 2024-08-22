@@ -1,3 +1,4 @@
+import pyinstrument
 import pytest
 from tests.test_lib import parse_build_compare_editor
 

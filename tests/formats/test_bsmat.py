@@ -7,7 +7,7 @@ from mercury_engine_data_structures.formats.bsmat import Bsmat
 
 
 @pytest.mark.parametrize("bsmat_path", dread_data.all_files_ending_with(".bsmat"))
-def test_compare_dread_all(dread_file_tree, bsmat_path):
+def test_compare_bsmat_dread(dread_file_tree, bsmat_path):
     parse_build_compare_editor(Bsmat, dread_file_tree, bsmat_path)
 
 

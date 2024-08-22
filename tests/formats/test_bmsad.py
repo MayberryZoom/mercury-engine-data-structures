@@ -356,7 +356,7 @@ sr_missing = [
 
 
 @pytest.mark.parametrize("bmsad_path", dread_data.all_files_ending_with(".bmsad"))
-def test_compare_dread_all(dread_file_tree, bmsad_path):
+def test_compare_bmsad_dread(dread_file_tree, bmsad_path):
     if bmsad_path in expected_dread_failures:
         expectation = pytest.raises(construct.ConstructError)
     else:

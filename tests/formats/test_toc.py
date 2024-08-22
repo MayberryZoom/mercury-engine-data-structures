@@ -2,7 +2,7 @@ from mercury_engine_data_structures.formats.toc import Toc
 from mercury_engine_data_structures.game_check import Game
 
 
-def test_compare_dread(dread_path):
+def test_compare_toc_dread(dread_path):
     game = Game.DREAD
     toc_class = Toc.construct_class(game)
     toc_path = dread_path.joinpath("system/files.toc")
